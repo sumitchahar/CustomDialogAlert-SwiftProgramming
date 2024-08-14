@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rVA-2c-MUb" customClass="CollectionViewItemListCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ds6-ee-nMK">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="221"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q92-7B-l7s">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="221"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_image_One" translatesAutoresizingMaskIntoConstraints="NO" id="C1s-H5-gl6">
+                                <rect key="frame" x="0.0" y="0.0" width="347" height="221"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lty-PL-hhC">
+                                <rect key="frame" x="169" y="163" width="160" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-z7-dbC">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-FH-VkJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="clickOnSenderBtn:" destination="rVA-2c-MUb" eventType="touchUpInside" id="m6B-Vq-8u1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.11442854020979021" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XxQ-z7-dbC" secondAttribute="trailing" id="AHL-oK-5M1"/>
+                                    <constraint firstItem="XxQ-z7-dbC" firstAttribute="top" secondItem="Lty-PL-hhC" secondAttribute="top" id="Bw7-tB-7T5"/>
+                                    <constraint firstItem="p4Z-FH-VkJ" firstAttribute="leading" secondItem="Lty-PL-hhC" secondAttribute="leading" id="I8s-9K-tUG"/>
+                                    <constraint firstAttribute="height" constant="44" id="LTO-J0-YVn"/>
+                                    <constraint firstAttribute="width" constant="160" id="NBh-JX-bAQ"/>
+                                    <constraint firstItem="XxQ-z7-dbC" firstAttribute="leading" secondItem="Lty-PL-hhC" secondAttribute="leading" id="e7i-mN-hIP"/>
+                                    <constraint firstItem="p4Z-FH-VkJ" firstAttribute="top" secondItem="Lty-PL-hhC" secondAttribute="top" id="qiS-tp-xK9"/>
+                                    <constraint firstAttribute="bottom" secondItem="XxQ-z7-dbC" secondAttribute="bottom" id="vVJ-mh-iUv"/>
+                                    <constraint firstAttribute="trailing" secondItem="p4Z-FH-VkJ" secondAttribute="trailing" id="wH5-Gp-Noj"/>
+                                    <constraint firstAttribute="bottom" secondItem="p4Z-FH-VkJ" secondAttribute="bottom" id="yeV-cp-ySP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lty-PL-hhC" secondAttribute="trailing" constant="18" id="4Fr-A7-iSh"/>
+                            <constraint firstAttribute="bottom" secondItem="Lty-PL-hhC" secondAttribute="bottom" constant="14" id="7WJ-zo-M0c"/>
+                            <constraint firstItem="C1s-H5-gl6" firstAttribute="top" secondItem="Q92-7B-l7s" secondAttribute="top" id="8og-Sf-zy9"/>
+                            <constraint firstItem="C1s-H5-gl6" firstAttribute="leading" secondItem="Q92-7B-l7s" secondAttribute="leading" id="NOn-2C-SHV"/>
+                            <constraint firstAttribute="bottom" secondItem="C1s-H5-gl6" secondAttribute="bottom" id="Ycr-CA-JVk"/>
+                            <constraint firstAttribute="trailing" secondItem="C1s-H5-gl6" secondAttribute="trailing" id="ixI-cY-bh6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q92-7B-l7s" firstAttribute="leading" secondItem="ds6-ee-nMK" secondAttribute="leading" id="8ES-Ou-wbm"/>
+                    <constraint firstAttribute="bottom" secondItem="Q92-7B-l7s" secondAttribute="bottom" id="Hhn-oR-Z7Q"/>
+                    <constraint firstAttribute="trailing" secondItem="Q92-7B-l7s" secondAttribute="trailing" id="Lqz-PJ-rU8"/>
+                    <constraint firstItem="Q92-7B-l7s" firstAttribute="top" secondItem="ds6-ee-nMK" secondAttribute="top" id="bfg-tF-VC8"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="347" height="221"/>
+            <connections>
+                <outlet property="direction_details" destination="Lty-PL-hhC" id="CYx-Jc-yAF"/>
+                <outlet property="image_view" destination="C1s-H5-gl6" id="zbc-ib-ktg"/>
+                <outlet property="mainView" destination="Q92-7B-l7s" id="CpH-ur-OzE"/>
+            </connections>
+            <point key="canvasLocation" x="148.85496183206106" y="51.760563380281695"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Bg_image_One" width="700" height="400"/>
+    </resources>
+</document>
